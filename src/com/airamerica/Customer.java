@@ -4,19 +4,52 @@ public class Customer {
 	
 	
 	private String customerCode;
+	private String type;
 	
 	/* Note how Person has been used as 
 	 * primary contact(Composition Relationship) */ 
 	private Person primaryContact;
-
-	/*TODO: Add other fields as necessary (eg. firstName, lastName,
-	phoneNo etc) */
+	private String customerName;
+	private int airlineMiles;
 	
-	// TODO: Add constructor(s)
+	public Customer(String customerCode, String type, Person primaryContact, String customerName, int airlineMiles) {
+		super();
+		this.customerCode = customerCode;
+		this.type = type;
+		this.primaryContact = primaryContact;
+		this.customerName = customerName;
+		this.airlineMiles = airlineMiles;
+	}
 	
-	/*TODO: Add Getters and setters */
+	public String getCustomerCode() {
+		return customerCode;
+	}
+	public void setCustomerCode(String customerCode) {
+		this.customerCode = customerCode;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
 	public Person getPrimaryContact() {
 		return primaryContact;
+	}
+	public void setPrimaryContact(Person primaryContact) {
+		this.primaryContact = primaryContact;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public int getAirlineMiles() {
+		return airlineMiles;
+	}
+	public void setAirlineMiles(int airlineMiles) {
+		this.airlineMiles = airlineMiles;
 	}
 
 	//TODO: Add additional methods if needed */
