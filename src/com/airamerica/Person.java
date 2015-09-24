@@ -11,19 +11,20 @@ public class Person {
 	
 	/* Note how Address has been used (Composition Relationship) */ 
 	private Address address;
+	private String firstName;
+	private String lastName;
+	private String phoneNumber;
 	
-	/* Note how email is used (a collection of variable size) */ 
 	private List<String> emails;
 	
-	/*TODO: Add other fields as necessary (eg. firstName, lastName,
-	phoneNo etc) */
-	
-
 	// TODO: Add appropriate constructor(s)
-	public Person(String personCode, Address address) {
+	public Person(String personCode, Address address, String firstName, String lastName, String phoneNumber) {
 		this.personCode = personCode;
 		this.address = address;
 		this.emails = new ArrayList<String>();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phoneNumber = phoneNumber;
 	}
 	
 	// TODO: Add Getters and setters as appropriate
