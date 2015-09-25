@@ -18,12 +18,13 @@ public class Person {
 	private List<String> emails;
 	
 	// TODO: Add appropriate constructor(s)
-	public Person(String personCode, Address address, String firstName, String lastName) {
+	public Person(String personCode, Address address, String firstName, String lastName, String phoneNumber) {
 		this.personCode = personCode;
 		this.address = address;
 		this.emails = new ArrayList<String>();
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.phoneNumber = phoneNumber;
 	}
 	
 	

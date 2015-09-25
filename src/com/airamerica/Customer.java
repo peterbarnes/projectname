@@ -10,9 +10,9 @@ public class Customer {
 	 * primary contact(Composition Relationship) */ 
 	private Person primaryContact;
 	private String customerName;
-	private int airlineMiles;
+	private String airlineMiles;
 	
-	public Customer(String customerCode, String type, Person primaryContact, String customerName, int airlineMiles) {
+	public Customer(String customerCode, String type, Person primaryContact, String customerName, String airlineMiles) {
 		super();
 		this.customerCode = customerCode;
 		this.type = type;
@@ -45,10 +45,10 @@ public class Customer {
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
-	public int getAirlineMiles() {
+	public String getAirlineMiles() {
 		return airlineMiles;
 	}
-	public void setAirlineMiles(int airlineMiles) {
+	public void setAirlineMiles(String airlineMiles) {
 		this.airlineMiles = airlineMiles;
 	}
 
