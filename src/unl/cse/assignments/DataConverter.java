@@ -14,6 +14,11 @@ import com.thoughtworks.xstream.XStream;
 
 public class DataConverter {
 	
+	public static ArrayList<Person> personList = new ArrayList<Person>();
+	public static ArrayList<Airport> airportList = new ArrayList<Airport>();
+	public static ArrayList<Customer> customerList = new ArrayList<Customer>();
+	public static ArrayList<Product> productList = new ArrayList<Product>();
+	
 	// Methods to output various classes to XML Files
 	public static void outputXMLFileForCustomers(ArrayList<Customer> customerList){
 		XStream xstream = new XStream();
@@ -111,7 +116,6 @@ public class DataConverter {
 		int totalPersons = persons.nextInt();
 		String blank = persons.nextLine();
 		
-		ArrayList<Person> personList = new ArrayList<Person>(totalPersons);
 		// Splitting the dat file at every ";" and populating a token array
 		while (persons.hasNext()) {
 			String line       = persons.nextLine();
@@ -164,7 +168,6 @@ public class DataConverter {
 
 		int totalAirports = airports.nextInt();
 		String blank1 = airports.nextLine();
-		ArrayList<Airport> airportList = new ArrayList<Airport>(totalAirports);
 		while (airports.hasNext()) {
 			String line        = airports.nextLine();
 			String tokens[]    = line.split(";");
@@ -214,7 +217,6 @@ public class DataConverter {
 
 		int totalCustomers = customers.nextInt();
 		String blank2 = customers.nextLine();
-		ArrayList<Customer> customerList = new ArrayList<Customer>(totalCustomers);
 		while (customers.hasNext()){
 			String line         = customers.nextLine();
 			String tokens[]     = line.split(";");
@@ -254,7 +256,7 @@ public class DataConverter {
 		int totalProducts = products.nextInt();
 		System.out.println(totalProducts);
 		String blank3 = products.nextLine();
-		ArrayList<Product> productList = new ArrayList<Product>(totalProducts);
+		
 		while(products.hasNext()){
 			String line        = products.nextLine();
 			String tokens[]    = line.split(";");

@@ -1,5 +1,12 @@
 package unl.cse.assignments;
 
+import com.airamerica.*;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /* Assignment 3,5 and 6 (Project Phase-II,IV and V) */
 
 public class InvoiceReport {
@@ -54,6 +61,30 @@ public class InvoiceReport {
 
 	public static void main(String args[]) {
 		
+		Scanner invoices = null;
+
+		try {
+			invoices = new Scanner (new File ("data/Invoices.dat"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		int totalInvoices = invoices.nextInt();
+		String blank = invoices.nextLine();
+		ArrayList<Invoice>invoiceList = new ArrayList<Invoice>(totalInvoices);
+		
+		while (invoices.hasNext()){
+			String line = invoices.nextLine();
+			String tokens[] = line.split(";");
+			String invoiceCode = tokens[0];
+			String customerCode = tokens[1];
+			String salespersonCode = tokens[2];
+			String date = tokens[3];
+			
+			Invoice invoice = new Invoice(invoiceCode, customerCode, salespersonCode, date);
+			invoiceList.add(invoice);
+		}
+		
 		InvoiceReport ir = new InvoiceReport();
 		String summary = ir.generateSummaryReport();
 		String details = ir.generateDetailReport();
@@ -65,5 +96,6 @@ public class InvoiceReport {
 		System.out.println("======================================================================================================================");
 		System.out.println("\n\n");
 		
+		personList.add("thing");
 	}
 }

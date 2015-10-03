@@ -19,11 +19,9 @@
       <country>90045</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>34</latitudeDegs>
-    <latitudeMins>3</latitudeMins>
-    <longitudeDegs>118</longitudeDegs>
-    <longitudeMins>15</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>34.05</latitude>
+    <longtitude>118.25</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>ATL</airportCode>
@@ -35,11 +33,9 @@
       <country>30320</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>45</latitudeMins>
-    <longitudeDegs>84</longitudeDegs>
-    <longitudeMins>23</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.75</latitude>
+    <longtitude>84.38333333333334</longtitude>
   </arrAirportCode>
   <depTime>09:30</depTime>
   <arrTime>15:55</arrTime>
@@ -65,11 +61,9 @@
       <country>68524</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>40</latitudeDegs>
-    <latitudeMins>50</latitudeMins>
-    <longitudeDegs>96</longitudeDegs>
-    <longitudeMins>40</longitudeMins>
     <passengerFacilityFee>0.0</passengerFacilityFee>
+    <latitude>40.833333333333336</latitude>
+    <longtitude>96.66666666666667</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>ATL</airportCode>
@@ -81,11 +75,9 @@
       <country>30320</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>45</latitudeMins>
-    <longitudeDegs>84</longitudeDegs>
-    <longitudeMins>23</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.75</latitude>
+    <longtitude>84.38333333333334</longtitude>
   </arrAirportCode>
   <depTime>06:00</depTime>
   <arrTime>9:08</arrTime>
@@ -101,8 +93,6 @@
 <com.airamerica.OffSeasonTicket>
   <productCode>1240</productCode>
   <productType>TO</productType>
-  <seasonStartDate>2015-10-07</seasonStartDate>
-  <seasonEndDate>2016-01-29</seasonEndDate>
   <depAirportCode>
     <airportCode>LNK</airportCode>
     <name>Lincoln Municipal</name>
@@ -113,11 +103,9 @@
       <country>68524</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>40</latitudeDegs>
-    <latitudeMins>50</latitudeMins>
-    <longitudeDegs>96</longitudeDegs>
-    <longitudeMins>40</longitudeMins>
     <passengerFacilityFee>0.0</passengerFacilityFee>
+    <latitude>40.833333333333336</latitude>
+    <longtitude>96.66666666666667</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>ATL</airportCode>
@@ -129,17 +117,17 @@
       <country>30320</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>45</latitudeMins>
-    <longitudeDegs>84</longitudeDegs>
-    <longitudeMins>23</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.75</latitude>
+    <longtitude>84.38333333333334</longtitude>
   </arrAirportCode>
   <depTime>06:00</depTime>
   <arrTime>9:08</arrTime>
   <flightNo>NA4889</flightNo>
   <flightClass>EC</flightClass>
   <airCraftType>CRJ900</airCraftType>
+  <seasonStartDate>2015-10-07</seasonStartDate>
+  <seasonEndDate>2016-01-29</seasonEndDate>
   <rebate>0.1</rebate>
 </com.airamerica.OffSeasonTicket>
 <com.airamerica.StandardTicket>
@@ -155,11 +143,9 @@
       <country>30320</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>45</latitudeMins>
-    <longitudeDegs>84</longitudeDegs>
-    <longitudeMins>23</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.75</latitude>
+    <longtitude>84.38333333333334</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>LNK</airportCode>
@@ -171,11 +157,9 @@
       <country>68524</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>40</latitudeDegs>
-    <latitudeMins>50</latitudeMins>
-    <longitudeDegs>96</longitudeDegs>
-    <longitudeMins>40</longitudeMins>
     <passengerFacilityFee>0.0</passengerFacilityFee>
+    <latitude>40.833333333333336</latitude>
+    <longtitude>96.66666666666667</longtitude>
   </arrAirportCode>
   <depTime>21:15</depTime>
   <arrTime>22:42</arrTime>
@@ -193,8 +177,6 @@
 <com.airamerica.OffSeasonTicket>
   <productCode>1243</productCode>
   <productType>TO</productType>
-  <seasonStartDate>2015-10-07</seasonStartDate>
-  <seasonEndDate>2016-01-29</seasonEndDate>
   <depAirportCode>
     <airportCode>ATL</airportCode>
     <name>Hartsfield Jackson Atlanta International Airport</name>
@@ -205,11 +187,9 @@
       <country>30320</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>45</latitudeMins>
-    <longitudeDegs>84</longitudeDegs>
-    <longitudeMins>23</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.75</latitude>
+    <longtitude>84.38333333333334</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>LNK</airportCode>
@@ -221,17 +201,17 @@
       <country>68524</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>40</latitudeDegs>
-    <latitudeMins>50</latitudeMins>
-    <longitudeDegs>96</longitudeDegs>
-    <longitudeMins>40</longitudeMins>
     <passengerFacilityFee>0.0</passengerFacilityFee>
+    <latitude>40.833333333333336</latitude>
+    <longtitude>96.66666666666667</longtitude>
   </arrAirportCode>
   <depTime>21:15</depTime>
   <arrTime>22:42</arrTime>
   <flightNo>NA4871</flightNo>
   <flightClass>EP</flightClass>
   <airCraftType>CRJ900</airCraftType>
+  <seasonStartDate>2015-10-07</seasonStartDate>
+  <seasonEndDate>2016-01-29</seasonEndDate>
   <rebate>0.2</rebate>
 </com.airamerica.OffSeasonTicket>
 <com.airamerica.CheckedBaggage>
@@ -252,11 +232,9 @@
       <country>90045</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>34</latitudeDegs>
-    <latitudeMins>3</latitudeMins>
-    <longitudeDegs>118</longitudeDegs>
-    <longitudeMins>15</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>34.05</latitude>
+    <longtitude>118.25</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>ATL</airportCode>
@@ -268,11 +246,9 @@
       <country>30320</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>45</latitudeMins>
-    <longitudeDegs>84</longitudeDegs>
-    <longitudeMins>23</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.75</latitude>
+    <longtitude>84.38333333333334</longtitude>
   </arrAirportCode>
   <depTime>09:30</depTime>
   <arrTime>15:55</arrTime>
@@ -293,11 +269,9 @@
       <country>90045</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>34</latitudeDegs>
-    <latitudeMins>3</latitudeMins>
-    <longitudeDegs>118</longitudeDegs>
-    <longitudeMins>15</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>34.05</latitude>
+    <longtitude>118.25</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>ATL</airportCode>
@@ -309,11 +283,9 @@
       <country>30320</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>45</latitudeMins>
-    <longitudeDegs>84</longitudeDegs>
-    <longitudeMins>23</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.75</latitude>
+    <longtitude>84.38333333333334</longtitude>
   </arrAirportCode>
   <depTime>10:15</depTime>
   <arrTime>18:13</arrTime>
@@ -335,11 +307,9 @@
       <country>30320</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>45</latitudeMins>
-    <longitudeDegs>84</longitudeDegs>
-    <longitudeMins>23</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.75</latitude>
+    <longtitude>84.38333333333334</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>LAX</airportCode>
@@ -351,11 +321,9 @@
       <country>90045</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>34</latitudeDegs>
-    <latitudeMins>3</latitudeMins>
-    <longitudeDegs>118</longitudeDegs>
-    <longitudeMins>15</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>34.05</latitude>
+    <longtitude>118.25</longtitude>
   </arrAirportCode>
   <depTime>10:50</depTime>
   <arrTime>12:50</arrTime>
@@ -382,11 +350,9 @@
       <country> 60666</country>
       <zip>IL</zip>
     </address>
-    <latitudeDegs>41</latitudeDegs>
-    <latitudeMins>50</latitudeMins>
-    <longitudeDegs>87</longitudeDegs>
-    <longitudeMins>37</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>41.833333333333336</latitude>
+    <longtitude>87.61666666666666</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>PHX</airportCode>
@@ -398,11 +364,9 @@
       <country>85034</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>29</latitudeMins>
-    <longitudeDegs>112</longitudeDegs>
-    <longitudeMins>4</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.483333333333334</latitude>
+    <longtitude>112.06666666666666</longtitude>
   </arrAirportCode>
   <depTime>09:09</depTime>
   <arrTime>11:06</arrTime>
@@ -429,11 +393,9 @@
       <country> 60666</country>
       <zip>IL</zip>
     </address>
-    <latitudeDegs>41</latitudeDegs>
-    <latitudeMins>50</latitudeMins>
-    <longitudeDegs>87</longitudeDegs>
-    <longitudeMins>37</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>41.833333333333336</latitude>
+    <longtitude>87.61666666666666</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>PHX</airportCode>
@@ -445,11 +407,9 @@
       <country>85034</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>29</latitudeMins>
-    <longitudeDegs>112</longitudeDegs>
-    <longitudeMins>4</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.483333333333334</latitude>
+    <longtitude>112.06666666666666</longtitude>
   </arrAirportCode>
   <depTime>09:09</depTime>
   <arrTime>11:06</arrTime>
@@ -467,8 +427,6 @@
 <com.airamerica.OffSeasonTicket>
   <productCode>1262</productCode>
   <productType>TO</productType>
-  <seasonStartDate>2015-09-01</seasonStartDate>
-  <seasonEndDate>2016-10-12</seasonEndDate>
   <depAirportCode>
     <airportCode>PHX</airportCode>
     <name>Phoenix Sky Harbor International</name>
@@ -479,11 +437,9 @@
       <country>85034</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>29</latitudeMins>
-    <longitudeDegs>112</longitudeDegs>
-    <longitudeMins>4</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.483333333333334</latitude>
+    <longtitude>112.06666666666666</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>ORD</airportCode>
@@ -495,24 +451,22 @@
       <country> 60666</country>
       <zip>IL</zip>
     </address>
-    <latitudeDegs>41</latitudeDegs>
-    <latitudeMins>50</latitudeMins>
-    <longitudeDegs>87</longitudeDegs>
-    <longitudeMins>37</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>41.833333333333336</latitude>
+    <longtitude>87.61666666666666</longtitude>
   </arrAirportCode>
   <depTime>14:24</depTime>
   <arrTime>19:56</arrTime>
   <flightNo>N2000</flightNo>
   <flightClass>BC</flightClass>
   <airCraftType>Airbus-A320</airCraftType>
+  <seasonStartDate>2015-09-01</seasonStartDate>
+  <seasonEndDate>2016-10-12</seasonEndDate>
   <rebate>0.15</rebate>
 </com.airamerica.OffSeasonTicket>
 <com.airamerica.OffSeasonTicket>
   <productCode>1263</productCode>
   <productType>TO</productType>
-  <seasonStartDate>2015-09-15</seasonStartDate>
-  <seasonEndDate>2016-12-29</seasonEndDate>
   <depAirportCode>
     <airportCode>PHX</airportCode>
     <name>Phoenix Sky Harbor International</name>
@@ -523,11 +477,9 @@
       <country>85034</country>
       <zip>USA</zip>
     </address>
-    <latitudeDegs>33</latitudeDegs>
-    <latitudeMins>29</latitudeMins>
-    <longitudeDegs>112</longitudeDegs>
-    <longitudeMins>4</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>33.483333333333334</latitude>
+    <longtitude>112.06666666666666</longtitude>
   </depAirportCode>
   <arrAirportCode>
     <airportCode>ORD</airportCode>
@@ -539,17 +491,17 @@
       <country> 60666</country>
       <zip>IL</zip>
     </address>
-    <latitudeDegs>41</latitudeDegs>
-    <latitudeMins>50</latitudeMins>
-    <longitudeDegs>87</longitudeDegs>
-    <longitudeMins>37</longitudeMins>
     <passengerFacilityFee>4.5</passengerFacilityFee>
+    <latitude>41.833333333333336</latitude>
+    <longtitude>87.61666666666666</longtitude>
   </arrAirportCode>
   <depTime>07:10</depTime>
   <arrTime>12:42</arrTime>
   <flightNo>N488</flightNo>
   <flightClass>EC</flightClass>
   <airCraftType>Airbus-A320</airCraftType>
+  <seasonStartDate>2015-09-15</seasonStartDate>
+  <seasonEndDate>2016-12-29</seasonEndDate>
   <rebate>0.25</rebate>
 </com.airamerica.OffSeasonTicket>
 <com.airamerica.Insurance>
