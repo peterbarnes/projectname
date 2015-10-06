@@ -9,6 +9,7 @@ public class Ticket extends Product {
 	private String flightNo;
 	private String flightClass;
 	private String airCraftType;
+	private String numberOfInsurance;
 	
 	public Ticket(String productCode, 
 				  String productType,
