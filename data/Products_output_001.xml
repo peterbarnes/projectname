@@ -42,6 +42,7 @@
   <flightNo>NA2222</flightNo>
   <flightClass>BC</flightClass>
   <airCraftType>Boeing757</airCraftType>
+  <passengers/>
 </com.airamerica.StandardTicket>
 <com.airamerica.CheckedBaggage>
   <productCode>90fa</productCode>
@@ -84,6 +85,7 @@
   <flightNo>NA4889</flightNo>
   <flightClass>EC</flightClass>
   <airCraftType>CRJ900</airCraftType>
+  <passengers/>
 </com.airamerica.StandardTicket>
 <com.airamerica.SpecialAssistance>
   <productCode>xer2</productCode>
@@ -126,6 +128,7 @@
   <flightNo>NA4889</flightNo>
   <flightClass>EC</flightClass>
   <airCraftType>CRJ900</airCraftType>
+  <passengers/>
   <seasonStartDate>2015-10-07</seasonStartDate>
   <seasonEndDate>2016-01-29</seasonEndDate>
   <rebate>0.1</rebate>
@@ -166,6 +169,7 @@
   <flightNo>NA4871</flightNo>
   <flightClass>EC</flightClass>
   <airCraftType>CRJ900</airCraftType>
+  <passengers/>
 </com.airamerica.StandardTicket>
 <com.airamerica.Insurance>
   <productCode>ff25</productCode>
@@ -210,6 +214,7 @@
   <flightNo>NA4871</flightNo>
   <flightClass>EP</flightClass>
   <airCraftType>CRJ900</airCraftType>
+  <passengers/>
   <seasonStartDate>2015-10-07</seasonStartDate>
   <seasonEndDate>2016-01-29</seasonEndDate>
   <rebate>0.2</rebate>
@@ -255,6 +260,7 @@
   <flightNo>NA2222</flightNo>
   <flightClass>EP</flightClass>
   <airCraftType>Boeing757</airCraftType>
+  <passengers/>
 </com.airamerica.StandardTicket>
 <com.airamerica.AwardTickets>
   <productCode>1257</productCode>
@@ -292,6 +298,7 @@
   <flightNo>NA101</flightNo>
   <flightClass>EP</flightClass>
   <airCraftType>Boeing737-900ER</airCraftType>
+  <passengers/>
   <pointsPerMile>90</pointsPerMile>
 </com.airamerica.AwardTickets>
 <com.airamerica.StandardTicket>
@@ -330,6 +337,7 @@
   <flightNo>NA1555</flightNo>
   <flightClass>EC</flightClass>
   <airCraftType>Boeing737-900ER</airCraftType>
+  <passengers/>
 </com.airamerica.StandardTicket>
 <com.airamerica.Refreshments>
   <productCode>32f4</productCode>
@@ -373,6 +381,7 @@
   <flightNo>N725</flightNo>
   <flightClass>EP</flightClass>
   <airCraftType>Airbus-A319</airCraftType>
+  <passengers/>
   <pointsPerMile>110</pointsPerMile>
 </com.airamerica.AwardTickets>
 <com.airamerica.SpecialAssistance>
@@ -416,6 +425,7 @@
   <flightNo>N725</flightNo>
   <flightClass>BC</flightClass>
   <airCraftType>Airbus-A319</airCraftType>
+  <passengers/>
 </com.airamerica.StandardTicket>
 <com.airamerica.Insurance>
   <productCode>ff24</productCode>
@@ -460,6 +470,7 @@
   <flightNo>N2000</flightNo>
   <flightClass>BC</flightClass>
   <airCraftType>Airbus-A320</airCraftType>
+  <passengers/>
   <seasonStartDate>2015-09-01</seasonStartDate>
   <seasonEndDate>2016-10-12</seasonEndDate>
   <rebate>0.15</rebate>
@@ -500,6 +511,7 @@
   <flightNo>N488</flightNo>
   <flightClass>EC</flightClass>
   <airCraftType>Airbus-A320</airCraftType>
+  <passengers/>
   <seasonStartDate>2015-09-15</seasonStartDate>
   <seasonEndDate>2016-12-29</seasonEndDate>
   <rebate>0.25</rebate>

@@ -1,8 +1,7 @@
 package com.airamerica;
 
 public class Customer {
-	
-	
+
 	private String customerCode;
 	private String type;
 	

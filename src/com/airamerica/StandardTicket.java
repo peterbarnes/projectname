@@ -15,5 +15,4 @@ public class StandardTicket extends Ticket {
 				arrTime, flightNo, flightClass, airCraftType);
 		// TODO Auto-generated constructor stub
 	}
-	
 }

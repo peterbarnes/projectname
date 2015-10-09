@@ -19,5 +19,47 @@ public class Invoice {
 		SalespersonCode = salespersonCode;
 		this.date = date;
 		this.products = products;
+	}
+
+	public String getInvoiceCode() {
+		return InvoiceCode;
+	}
+
+	public void setInvoiceCode(String invoiceCode) {
+		InvoiceCode = invoiceCode;
+	}
+
+	public Customer getCustomerCode() {
+		return CustomerCode;
+	}
+
+	public void setCustomerCode(Customer customerCode) {
+		CustomerCode = customerCode;
+	}
+
+	public Person getSalespersonCode() {
+		return SalespersonCode;
+	}
+
+	public void setSalespersonCode(Person salespersonCode) {
+		SalespersonCode = salespersonCode;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public ArrayList<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(ArrayList<Product> products) {
+		this.products = products;
 	}	
+	
+	
 }
