@@ -354,6 +354,7 @@ public class DataLoader {
 		}
 		
 		int totalInvoices = Integer.parseInt(sc.nextLine());
+		System.out.println(totalInvoices);
 		invoices = new ArrayList<Invoice>(totalInvoices);
 		
 		while (sc.hasNext()){
@@ -379,6 +380,7 @@ public class DataLoader {
 				
 				if(product instanceof Ticket){
 					String travelDate = productTokens[1];
+					((Ticket) product).setTravelDate(travelDate);
 					int noOfPass = Integer.parseInt(productTokens[2]);
 					int counter = 0;
 					for(int j = 0; j < noOfPass * 5; j+=5){
@@ -426,8 +428,18 @@ public class DataLoader {
 				invoiceProducts.add(product);
 			}
 			
+			Invoice invoice = new Invoice(invoiceCode, customer, salesperson, invoiceDate, invoiceProducts);
+			invoices.add(invoice);
 		}
 		
+	}
+	
+	public static void loadData(){
+		loadDataFromPerson();
+		loadDataFromCustomer();
+		loadDataFromAirport();
+		loadDataFromProduct();
+		loadDataFromInvoice();
 	}
 	
 	// Return populated ArrayLists

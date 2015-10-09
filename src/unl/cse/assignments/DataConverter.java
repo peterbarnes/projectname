@@ -112,13 +112,17 @@ public class DataConverter extends DataLoader{
 		pw.close();
 	}
 
-	public static void main(String args[]) {
-		
+	public static void outputXMLFiles(){
 		outputXMLFileForPersons(getPersons());
 		outputXMLFileForCustomers(getCustomers());
 		outputXMLFileForAirports(getAirports());
 		outputXMLFileForProducts(getProducts());
 		outputXMLFileForInvoices(getInvoices());
+	}
+	
+	public static void main(String args[]) {
+		
+		outputXMLFiles();
 		
 		System.out.println("Shit worked");
 	}

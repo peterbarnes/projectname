@@ -59,11 +59,7 @@ public class InvoiceReport extends DataLoader{
 
 	public static void main(String args[]) {
 		
-		getPersons();
-		getCustomers();
-		getAirports();
-		getProducts();
-		getInvoices();
+		loadData();
 		
 		System.out.println("running");
 		
