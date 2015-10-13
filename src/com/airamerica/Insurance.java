@@ -1,5 +1,7 @@
 package com.airamerica;
 
+import com.airamerica.utils.*;
+
 public class Insurance extends Product {
 	
 	private String name;
@@ -56,6 +58,13 @@ public class Insurance extends Product {
 		this.ticket = product;
 	}
 	
-	
+	public double calculateFee(){
+		
+		Ticket newTicket = (Ticket) ticket;
+		
+		double fee = this.costPerMile * newTicket.getMiles();
+		
+		return fee;
+	}
 
 }

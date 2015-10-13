@@ -1,6 +1,7 @@
 package com.airamerica;
 
 import java.util.ArrayList;
+import com.airamerica.utils.*;
 
 public class Ticket extends Product {
 	
@@ -15,6 +16,8 @@ public class Ticket extends Product {
 	private String flightNo;
 	private String flightClass;
 	private String airCraftType;
+	private double baseFare;
+	private double miles;
 	
 	private ArrayList<Passenger> passengers;
 	
@@ -36,6 +39,17 @@ public class Ticket extends Product {
 		this.flightClass = flightClass;
 		this.airCraftType = airCraftType;
 		this.passengers = new ArrayList<Passenger>();
+		if(flightClass.equals("EC")){
+			this.baseFare = .15;
+		} else if(flightClass.equals("BC")){
+			this.baseFare = .5;
+		} else if(flightClass.equals("EP")){
+			this.baseFare = .2;
+		}
+		
+		Haversine haversine = new Haversine();
+		
+		this.miles = haversine.getMiles(this.getDepAirportCode().getLatitude(), this.getDepAirportCode().getLongtitude(), this.getArrAirportCode().getLatitude(), this.getArrAirportCode().getLongtitude());
 	}
 
 	public String getTravelDate() {
@@ -137,5 +151,37 @@ public class Ticket extends Product {
 	public void addPassenger(Passenger passenger){
 		this.passengers.add(passenger);
 	}
+	
+	public double getMiles(){
+		return this.miles;
+	}
+	
+	public double calculateFee(String type){
+		double federalExciseTax = 1.075;
+		double flightSegmentTax = 4 * this.passengers.size();
+		double sept11SecurityFee = 5.60 * this.passengers.size();
+		double passengerFacilityCharge = this.getArrAirportCode().getPassengerFacilityFee();
+		
+		Haversine haversine = new Haversine();
+		 
+		double totalFee = this.baseFare * this.miles;;
+		
+		if(type.equals("G")){
+			totalFee *= federalExciseTax;
+			totalFee += passengerFacilityCharge;
+			totalFee += sept11SecurityFee;
+			totalFee += flightSegmentTax;
+			
+		} else if(type.equals("C")){
+			totalFee *= .88;
+			totalFee *= federalExciseTax;
+			totalFee += passengerFacilityCharge;
+			totalFee += sept11SecurityFee;
+			totalFee += flightSegmentTax;
+		}
+		
+		return totalFee;
+	}
+	
 	
 }

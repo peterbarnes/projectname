@@ -35,5 +35,10 @@ public class Refreshments extends Product {
 	public void setNoOfRefreshments(String noOfRefreshments) {
 		this.noOfRefreshments = noOfRefreshments;
 	}
+	
+	public double calculateFee(){
+		
+		return 0;
+	}
 
 }

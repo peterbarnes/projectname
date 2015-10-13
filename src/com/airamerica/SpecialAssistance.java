@@ -26,6 +26,8 @@ public class SpecialAssistance extends Product {
 		this.person = person;
 	}
 	
-	
+	public String calculateFee(){
+		return typeOfService;
+	}
 
 }
