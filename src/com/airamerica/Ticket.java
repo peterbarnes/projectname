@@ -5,21 +5,21 @@ import com.airamerica.utils.*;
 
 public class Ticket extends Product {
 	
-	private String travelDate;
-	private String noOfPass;
-	private Person person;
-	private String ticketNote;
-	private Airport depAirportCode;
-	private Airport arrAirportCode;
-	private String depTime;
-	private String arrTime;
-	private String flightNo;
-	private String flightClass;
-	private String airCraftType;
-	private double baseFare;
-	private double miles;
+	protected String travelDate;
+	protected String noOfPass;
+	protected Person person;
+	protected String ticketNote;
+	protected Airport depAirportCode;
+	protected Airport arrAirportCode;
+	protected String depTime;
+	protected String arrTime;
+	protected String flightNo;
+	protected String flightClass;
+	protected String airCraftType;
+	protected double baseFare;
+	protected double miles;
 	
-	private ArrayList<Passenger> passengers;
+	protected ArrayList<Passenger> passengers;
 	
 	public Ticket(String productCode, 
 				  String productType,
@@ -156,32 +156,6 @@ public class Ticket extends Product {
 		return this.miles;
 	}
 	
-	public double calculateFee(String type){
-		double federalExciseTax = 1.075;
-		double flightSegmentTax = 4 * this.passengers.size();
-		double sept11SecurityFee = 5.60 * this.passengers.size();
-		double passengerFacilityCharge = this.getArrAirportCode().getPassengerFacilityFee();
-		
-		Haversine haversine = new Haversine();
-		 
-		double totalFee = this.baseFare * this.miles;;
-		
-		if(type.equals("G")){
-			totalFee *= federalExciseTax;
-			totalFee += passengerFacilityCharge;
-			totalFee += sept11SecurityFee;
-			totalFee += flightSegmentTax;
-			
-		} else if(type.equals("C")){
-			totalFee *= .88;
-			totalFee *= federalExciseTax;
-			totalFee += passengerFacilityCharge;
-			totalFee += sept11SecurityFee;
-			totalFee += flightSegmentTax;
-		}
-		
-		return totalFee;
-	}
 	
 	
 }

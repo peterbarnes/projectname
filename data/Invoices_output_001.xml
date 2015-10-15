@@ -59,6 +59,10 @@
           <country>90045</country>
           <zip>USA</zip>
         </address>
+        <latitudeDegs>34</latitudeDegs>
+        <latitudeMins>3</latitudeMins>
+        <longitudeDegs>118</longitudeDegs>
+        <longitudeMins>15</longitudeMins>
         <passengerFacilityFee>4.5</passengerFacilityFee>
         <latitude>34.05</latitude>
         <longtitude>118.25</longtitude>
@@ -73,6 +77,10 @@
           <country>30320</country>
           <zip>USA</zip>
         </address>
+        <latitudeDegs>33</latitudeDegs>
+        <latitudeMins>45</latitudeMins>
+        <longitudeDegs>84</longitudeDegs>
+        <longitudeMins>23</longitudeMins>
         <passengerFacilityFee>4.5</passengerFacilityFee>
         <latitude>33.75</latitude>
         <longtitude>84.38333333333334</longtitude>
@@ -82,6 +90,8 @@
       <flightNo>NA2222</flightNo>
       <flightClass>BC</flightClass>
       <airCraftType>Boeing757</airCraftType>
+      <baseFare>0.5</baseFare>
+      <miles>1933.8471801254468</miles>
       <passengers>
         <com.airamerica.Passenger>
           <seat>12A</seat>
@@ -189,6 +199,10 @@
           <country>68524</country>
           <zip>USA</zip>
         </address>
+        <latitudeDegs>40</latitudeDegs>
+        <latitudeMins>50</latitudeMins>
+        <longitudeDegs>96</longitudeDegs>
+        <longitudeMins>40</longitudeMins>
         <passengerFacilityFee>0.0</passengerFacilityFee>
         <latitude>40.833333333333336</latitude>
         <longtitude>96.66666666666667</longtitude>
@@ -203,6 +217,10 @@
           <country>30320</country>
           <zip>USA</zip>
         </address>
+        <latitudeDegs>33</latitudeDegs>
+        <latitudeMins>45</latitudeMins>
+        <longitudeDegs>84</longitudeDegs>
+        <longitudeMins>23</longitudeMins>
         <passengerFacilityFee>4.5</passengerFacilityFee>
         <latitude>33.75</latitude>
         <longtitude>84.38333333333334</longtitude>
@@ -212,6 +230,8 @@
       <flightNo>NA4889</flightNo>
       <flightClass>EC</flightClass>
       <airCraftType>CRJ900</airCraftType>
+      <baseFare>0.15</baseFare>
+      <miles>832.8024687008581</miles>
       <passengers>
         <com.airamerica.Passenger>
           <seat>32C</seat>
@@ -275,6 +295,8 @@
       <flightNo>NA4871</flightNo>
       <flightClass>EC</flightClass>
       <airCraftType>CRJ900</airCraftType>
+      <baseFare>0.15</baseFare>
+      <miles>832.8024687008581</miles>
       <passengers>
         <com.airamerica.Passenger>
           <seat>12C</seat>
@@ -359,6 +381,10 @@
           <country>68524</country>
           <zip>USA</zip>
         </address>
+        <latitudeDegs>40</latitudeDegs>
+        <latitudeMins>50</latitudeMins>
+        <longitudeDegs>96</longitudeDegs>
+        <longitudeMins>40</longitudeMins>
         <passengerFacilityFee>0.0</passengerFacilityFee>
         <latitude>40.833333333333336</latitude>
         <longtitude>96.66666666666667</longtitude>
@@ -373,6 +399,10 @@
           <country>30320</country>
           <zip>USA</zip>
         </address>
+        <latitudeDegs>33</latitudeDegs>
+        <latitudeMins>45</latitudeMins>
+        <longitudeDegs>84</longitudeDegs>
+        <longitudeMins>23</longitudeMins>
         <passengerFacilityFee>4.5</passengerFacilityFee>
         <latitude>33.75</latitude>
         <longtitude>84.38333333333334</longtitude>
@@ -382,6 +412,8 @@
       <flightNo>NA4889</flightNo>
       <flightClass>EC</flightClass>
       <airCraftType>CRJ900</airCraftType>
+      <baseFare>0.15</baseFare>
+      <miles>832.8024687008581</miles>
       <passengers>
         <com.airamerica.Passenger>
           <seat>32C</seat>
@@ -507,6 +539,10 @@
           <country> 60666</country>
           <zip>IL</zip>
         </address>
+        <latitudeDegs>41</latitudeDegs>
+        <latitudeMins>50</latitudeMins>
+        <longitudeDegs>87</longitudeDegs>
+        <longitudeMins>37</longitudeMins>
         <passengerFacilityFee>4.5</passengerFacilityFee>
         <latitude>41.833333333333336</latitude>
         <longtitude>87.61666666666666</longtitude>
@@ -521,6 +557,10 @@
           <country>85034</country>
           <zip>USA</zip>
         </address>
+        <latitudeDegs>33</latitudeDegs>
+        <latitudeMins>29</latitudeMins>
+        <longitudeDegs>112</longitudeDegs>
+        <longitudeMins>4</longitudeMins>
         <passengerFacilityFee>4.5</passengerFacilityFee>
         <latitude>33.483333333333334</latitude>
         <longtitude>112.06666666666666</longtitude>
@@ -530,6 +570,8 @@
       <flightNo>N725</flightNo>
       <flightClass>EP</flightClass>
       <airCraftType>Airbus-A319</airCraftType>
+      <baseFare>0.2</baseFare>
+      <miles>1450.3711569796144</miles>
       <passengers>
         <com.airamerica.Passenger>
           <seat>32F</seat>
@@ -614,6 +656,8 @@
       <flightNo>N2000</flightNo>
       <flightClass>BC</flightClass>
       <airCraftType>Airbus-A320</airCraftType>
+      <baseFare>0.5</baseFare>
+      <miles>1450.3711569796144</miles>
       <passengers>
         <com.airamerica.Passenger>
           <seat>10B</seat>

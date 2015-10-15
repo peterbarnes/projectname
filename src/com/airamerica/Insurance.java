@@ -58,11 +58,18 @@ public class Insurance extends Product {
 		this.ticket = product;
 	}
 	
-	public double calculateFee(){
+	public double calculateFee(String type){
 		
 		Ticket newTicket = (Ticket) ticket;
 		
 		double fee = this.costPerMile * newTicket.getMiles();
+		
+		if(type.equals("G")){
+			fee *= 1.04;
+		} else if(type.equals("C")){
+			fee *= .88;
+			fee *= 1.04;
+		}
 		
 		return fee;
 	}

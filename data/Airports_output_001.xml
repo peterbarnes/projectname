@@ -9,6 +9,10 @@
     <country>68524</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>40</latitudeDegs>
+  <latitudeMins>50</latitudeMins>
+  <longitudeDegs>96</longitudeDegs>
+  <longitudeMins>40</longitudeMins>
   <passengerFacilityFee>0.0</passengerFacilityFee>
   <latitude>40.833333333333336</latitude>
   <longtitude>96.66666666666667</longtitude>
@@ -23,6 +27,10 @@
     <country> 60666</country>
     <zip>IL</zip>
   </address>
+  <latitudeDegs>41</latitudeDegs>
+  <latitudeMins>50</latitudeMins>
+  <longitudeDegs>87</longitudeDegs>
+  <longitudeMins>37</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>41.833333333333336</latitude>
   <longtitude>87.61666666666666</longtitude>
@@ -37,6 +45,10 @@
     <country> 60638</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>41</latitudeDegs>
+  <latitudeMins>50</latitudeMins>
+  <longitudeDegs>87</longitudeDegs>
+  <longitudeMins>37</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>41.833333333333336</latitude>
   <longtitude>87.61666666666666</longtitude>
@@ -51,6 +63,10 @@
     <country>11430</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>40</latitudeDegs>
+  <latitudeMins>47</latitudeMins>
+  <longitudeDegs>73</longitudeDegs>
+  <longitudeMins>58</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>40.78333333333333</latitude>
   <longtitude>73.96666666666667</longtitude>
@@ -65,6 +81,10 @@
     <country>85034</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>33</latitudeDegs>
+  <latitudeMins>29</latitudeMins>
+  <longitudeDegs>112</longitudeDegs>
+  <longitudeMins>4</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>33.483333333333334</latitude>
   <longtitude>112.06666666666666</longtitude>
@@ -79,6 +99,10 @@
     <country>90045</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>34</latitudeDegs>
+  <latitudeMins>3</latitudeMins>
+  <longitudeDegs>118</longitudeDegs>
+  <longitudeMins>15</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>34.05</latitude>
   <longtitude>118.25</longtitude>
@@ -93,6 +117,10 @@
     <country>95110</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>37</latitudeDegs>
+  <latitudeMins>20</latitudeMins>
+  <longitudeDegs>121</longitudeDegs>
+  <longitudeMins>53</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>37.333333333333336</latitude>
   <longtitude>121.88333333333334</longtitude>
@@ -107,6 +135,10 @@
     <country>30320</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>33</latitudeDegs>
+  <latitudeMins>45</latitudeMins>
+  <longitudeDegs>84</longitudeDegs>
+  <longitudeMins>23</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>33.75</latitude>
   <longtitude>84.38333333333334</longtitude>
@@ -121,6 +153,10 @@
     <country>80249</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>39</latitudeDegs>
+  <latitudeMins>45</latitudeMins>
+  <longitudeDegs>105</longitudeDegs>
+  <longitudeMins>0</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>39.75</latitude>
   <longtitude>105.0</longtitude>
@@ -135,6 +171,10 @@
     <country>55111</country>
     <zip>USA</zip>
   </address>
+  <latitudeDegs>44</latitudeDegs>
+  <latitudeMins>59</latitudeMins>
+  <longitudeDegs>93</longitudeDegs>
+  <longitudeMins>14</longitudeMins>
   <passengerFacilityFee>4.5</passengerFacilityFee>
   <latitude>44.983333333333334</latitude>
   <longtitude>93.23333333333333</longtitude>
