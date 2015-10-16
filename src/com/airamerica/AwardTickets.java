@@ -22,14 +22,20 @@ public class AwardTickets extends Ticket {
 		// TODO Auto-generated constructor stub
 	}	
 
-	public double calculateSubtotal(){
+	public double calculatePoints(){
 
 		Haversine haversine = new Haversine();
 
-		double totalFee = this.baseFare * this.miles * this.passengers.size();
-		System.out.println(this.passengers.size());
-
-		return totalFee;
+		double cost = this.baseFare * this.miles;
+		
+		double totalPoints = this.pointsPerMile * cost;
+		System.out.println(totalPoints + " asdl;kfas;ldf;alsdjfl;ajfl;kdjf;laksjdf;lakfjs\n");
+	
+		return totalPoints;
+	}
+	
+	public double subtotal(){
+		return 30;
 	}
 
 	public double calculateTax(String type){
@@ -38,8 +44,10 @@ public class AwardTickets extends Ticket {
 		double flightSegmentTax = 4 * this.passengers.size();
 		double sept11SecurityFee = 5.60 * this.passengers.size();
 		double passengerFacilityCharge = this.getArrAirportCode().getPassengerFacilityFee() * this.getPassengers().size();
+		
+		double subtotal = 30;
 
-		double totalTax = calculateSubtotal();
+		double totalTax = 30;
 
 		if(type.equals("G")){
 			totalTax *= federalExciseTax;
@@ -53,7 +61,15 @@ public class AwardTickets extends Ticket {
 			totalTax += sept11SecurityFee;
 			totalTax += flightSegmentTax;
 		}
-		return totalTax - calculateSubtotal();
+		return totalTax - subtotal;
+	}
+
+	public int getPointsPerMile() {
+		return pointsPerMile;
+	}
+
+	public void setPointsPerMile(int pointsPerMile) {
+		this.pointsPerMile = pointsPerMile;
 	}
 
 }

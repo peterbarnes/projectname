@@ -26,7 +26,7 @@ public class CheckedBaggage extends Product {
 		this.noOfBaggage = noOfBaggage;
 	}
 	
-	public double calculateFee(String type){
+	public double calculateSubtotal(){
 		
 		double fee = 0;
 		int baggages = Integer.parseInt(this.noOfBaggage);
@@ -38,15 +38,17 @@ public class CheckedBaggage extends Product {
 				fee += 35;
 			}
 		}
-		
-		if(type.equals("G")){
-			fee *= 1.04;
-		} else if(type.equals("C")){
-			fee *= .88;
-			fee *= 1.04;
-		}
-		
+			
 		return fee;
+	}
+	
+	public double calculateTax(String type){
+		double tax = .04;
+		double subtotal = calculateSubtotal();
+		
+		double totalTax = subtotal * tax;
+		
+		return totalTax;
 	}
 
 }

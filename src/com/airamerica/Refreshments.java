@@ -36,17 +36,18 @@ public class Refreshments extends Product {
 		this.noOfRefreshments = noOfRefreshments;
 	}
 	
-	public double calculateFee(String type){
-		double fee = this.cost;
+	public double calculateSubtotal(){
+		double fee = this.cost * .95 * Integer.parseInt(this.noOfRefreshments);
 		
-		if(type.equals("G")){
-			fee *= 1.04;
-		} else if(type.equals("V")){
-			fee *= .88;
-			fee *= 1.04;
-		}
+		return fee;
+	}
+	
+	public double calculateTax(String type){
+		double tax = .04;
+		double subtotal = calculateSubtotal();
+		double totalTax = subtotal * tax;
 		
-		return cost;
+		return totalTax;
 	}
 
 }

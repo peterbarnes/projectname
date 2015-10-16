@@ -23,7 +23,6 @@ public class StandardTicket extends Ticket {
 		Haversine haversine = new Haversine();
 		 
 		double totalFee = this.baseFare * this.miles * this.passengers.size();
-		System.out.println(this.passengers.size());
 		
 		return totalFee;
 	}

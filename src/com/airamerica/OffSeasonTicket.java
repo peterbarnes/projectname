@@ -1,5 +1,7 @@
 package com.airamerica;
 
+import org.joda.time.DateTime;
+
 import com.airamerica.utils.Haversine;
 
 public class OffSeasonTicket extends Ticket {
@@ -28,25 +30,33 @@ public class OffSeasonTicket extends Ticket {
 	}
 
 	public double calculateSubtotal(){
-
+		DateTime startDate = DateTime.parse(this.seasonStartDate);
+		DateTime endDate = DateTime.parse(this.seasonEndDate);
+		
 		Haversine haversine = new Haversine();
 		
-		double discount = 1 - this.rebate;
+		double baseFee = this.baseFare * this.miles;
+		
+		double discount = baseFee * this.rebate;
 		//this.baseFare *= discount;
-		System.out.println(this.miles);
 
-		double totalFee = this.baseFare * this.miles + 20;
-		System.out.println(totalFee);
+		double totalFee = 0;
+		
+		if(this.travelDate.isBefore(endDate) && this.travelDate.isAfter(startDate)){
+			totalFee = baseFee - discount;
+		} else {
+			totalFee = baseFee;
+		}
 
-		return totalFee;
+		return totalFee * this.getPassengers().size() + 20;
 	}
 
 	public double calculateTax(String type){
 
 		double federalExciseTax = 1.075;
-		double flightSegmentTax = 4;
-		double sept11SecurityFee = 5.60;
-		double passengerFacilityCharge = this.getArrAirportCode().getPassengerFacilityFee();
+		double flightSegmentTax = 4 * this.getPassengers().size();
+		double sept11SecurityFee = 5.60 * this.getPassengers().size();
+		double passengerFacilityCharge = this.getArrAirportCode().getPassengerFacilityFee() * this.getPassengers().size();
 
 		double totalTax = calculateSubtotal();
 
@@ -64,5 +74,31 @@ public class OffSeasonTicket extends Ticket {
 		}
 		return totalTax - calculateSubtotal();
 	}
+
+	public String getSeasonStartDate() {
+		return seasonStartDate;
+	}
+
+	public void setSeasonStartDate(String seasonStartDate) {
+		this.seasonStartDate = seasonStartDate;
+	}
+
+	public String getSeasonEndDate() {
+		return seasonEndDate;
+	}
+
+	public void setSeasonEndDate(String seasonEndDate) {
+		this.seasonEndDate = seasonEndDate;
+	}
+
+	public double getRebate() {
+		return rebate;
+	}
+
+	public void setRebate(double rebate) {
+		this.rebate = rebate;
+	}
+	
+	
 
 }

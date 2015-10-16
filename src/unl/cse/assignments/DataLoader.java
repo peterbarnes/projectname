@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import org.joda.time.DateTime;
+
 import com.airamerica.*;
 
 public class DataLoader {
@@ -354,7 +356,6 @@ public class DataLoader {
 		}
 		
 		int totalInvoices = Integer.parseInt(sc.nextLine());
-		System.out.println(totalInvoices);
 		invoices = new ArrayList<Invoice>(totalInvoices);
 		
 		while (sc.hasNext()){
@@ -379,12 +380,11 @@ public class DataLoader {
 				Product product = searchProducts(productCode);
 				
 				if(product instanceof Ticket){
-					String travelDate = productTokens[1];
+					DateTime travelDate = DateTime.parse(productTokens[1]);
 					((Ticket) product).setTravelDate(travelDate);
 					int noOfPass = Integer.parseInt(productTokens[2]);
 					int counter = 0;
 					for(int j = 0; j < noOfPass * 5; j+=5){
-						
 						
 						String seat = productTokens[j + 3];
 						
@@ -425,6 +425,7 @@ public class DataLoader {
 					Person person = searchPersons(productTokens[1]);
 					((SpecialAssistance) product).setPerson(person);
 				}
+				System.out.println(product);
 				invoiceProducts.add(product);
 			}
 			
@@ -503,7 +504,21 @@ public class DataLoader {
 		Product product = null;
 		for(Product p : products){
 			if(p.getProductCode().equals(code)){
-				product = p;
+				if(p instanceof StandardTicket){
+					product = new StandardTicket(p.getProductCode(), p.getProductType(), ((Ticket) p).getDepAirportCode(), ((Ticket) p).getArrAirportCode(), ((Ticket) p).getDepTime(), ((Ticket) p).getArrTime(), ((Ticket) p).getFlightNo(), ((Ticket) p).getFlightClass(), ((Ticket) p).getAirCraftType());
+				} else if(p instanceof OffSeasonTicket){
+					product = new OffSeasonTicket(p.getProductCode(), p.getProductType(), ((OffSeasonTicket) p).getSeasonStartDate(), ((OffSeasonTicket) p).getSeasonEndDate(),((Ticket) p).getDepAirportCode(), ((Ticket) p).getArrAirportCode(), ((Ticket) p).getDepTime(), ((Ticket) p).getArrTime(), ((Ticket) p).getFlightNo(), ((Ticket) p).getFlightClass(), ((Ticket) p).getAirCraftType(), ((OffSeasonTicket) p).getRebate());
+				} else if(p instanceof AwardTickets){
+					product = new AwardTickets(p.getProductCode(), p.getProductType(), ((Ticket) p).getDepAirportCode(), ((Ticket) p).getArrAirportCode(), ((Ticket) p).getDepTime(), ((Ticket) p).getArrTime(), ((Ticket) p).getFlightNo(), ((Ticket) p).getFlightClass(), ((Ticket) p).getAirCraftType(), ((AwardTickets) p).getPointsPerMile());
+				} else if(p instanceof CheckedBaggage){
+					product = new CheckedBaggage(p.getProductCode(), p.getProductType(), ((CheckedBaggage) p).getTicketCode());
+				} else if(p instanceof Insurance){
+					product = new Insurance(p.getProductCode(), p.getProductType(), ((Insurance) p).getName(), ((Insurance) p).getAgeClass(), ((Insurance) p).getCostPerMile());
+				} else if(p instanceof Refreshments){
+					product = new Refreshments(p.getProductCode(), p.getProductType(), ((Refreshments) p).getName(), ((Refreshments) p).getCost());
+				} else if(p instanceof SpecialAssistance){
+					product = new SpecialAssistance(p.getProductCode(), p.getProductType(), ((SpecialAssistance) p).getTypeOfService());
+				}
 			}
 		}
 		return product;

@@ -1,11 +1,14 @@
 package com.airamerica;
 
 import java.util.ArrayList;
+
+import org.joda.time.DateTime;
+
 import com.airamerica.utils.*;
 
 public class Ticket extends Product {
 	
-	protected String travelDate;
+	protected DateTime travelDate;
 	protected String noOfPass;
 	protected Person person;
 	protected String ticketNote;
@@ -52,11 +55,11 @@ public class Ticket extends Product {
 		this.miles = haversine.getMiles(this.getDepAirportCode().getLatitude(), this.getDepAirportCode().getLongtitude(), this.getArrAirportCode().getLatitude(), this.getArrAirportCode().getLongtitude());
 	}
 
-	public String getTravelDate() {
+	public DateTime getTravelDate() {
 		return travelDate;
 	}
 
-	public void setTravelDate(String travelDate) {
+	public void setTravelDate(DateTime travelDate) {
 		this.travelDate = travelDate;
 	}
 
