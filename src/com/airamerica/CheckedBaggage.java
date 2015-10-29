@@ -43,10 +43,15 @@ public class CheckedBaggage extends Product {
 	}
 	
 	public double calculateTax(String type){
-		double tax = .04;
-		double subtotal = calculateSubtotal();
+		double tax = 0;
+		double totalTax = 0;
 		
-		double totalTax = subtotal * tax;
+		if(!(type.equals("V"))){
+			tax = .04;
+			double subtotal = calculateSubtotal();
+			
+			totalTax = subtotal * tax;
+		}
 		
 		return totalTax;
 	}

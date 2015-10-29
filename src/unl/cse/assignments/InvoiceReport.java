@@ -108,12 +108,12 @@ public class InvoiceReport extends DataLoader{
 					
 					Insurance insurance = (Insurance) p;
 					
-					finalSubtotal += insurance.calculateSubtotal(miles);
-					finalSubtotal2 += insurance.calculateSubtotal(miles);
-					finalTax += insurance.calculateTax(c.getType(), miles);
-					finalTax2 += insurance.calculateTax(c.getType(), miles);
-					finalTotal += insurance.calculateSubtotal(miles) + insurance.calculateTax(c.getType(), miles);
-					finalTotal2 += insurance.calculateSubtotal(miles) + insurance.calculateTax(c.getType(), miles);
+					finalSubtotal += insurance.calculateSubtotal();
+					finalSubtotal2 += insurance.calculateSubtotal();
+					finalTax += insurance.calculateTax(c.getType());
+					finalTax2 += insurance.calculateTax(c.getType());
+					finalTotal += insurance.calculateSubtotal() + insurance.calculateTax(c.getType());
+					finalTotal2 += insurance.calculateSubtotal() + insurance.calculateTax(c.getType());
 
 				} else if(p.getProductType().equals("SR")){
 
@@ -137,6 +137,8 @@ public class InvoiceReport extends DataLoader{
 			if(c.getType().equals("C")){
 				double discount = finalSubtotal * modifier;
 				finalTotal -= discount;
+				finalTotal2 -= discount;
+				finalTotal2 += additionalFee;
 			}
 			
 			sb.append(String.format("%-10s%-50s%-30s%11.2f%12.2f%12.2f%12.2f\n", i.getInvoiceCode(), i.getCustomerCode().getCustomerName() + " [" + customerType + "]", salespersonName, finalSubtotal, additionalFee, finalTax, finalTotal + additionalFee));
@@ -303,13 +305,13 @@ public class InvoiceReport extends DataLoader{
 				Insurance insurance = (Insurance) p;
 				sb.append(String.format("%-10s %-70s %-15.2f %-15.2f %-15.2f \n", p.getProductCode(), 
 						"Insurance " + insurance.getName() + " (" + insurance.getAgeClass() + ")", 
-						insurance.calculateSubtotal(miles), 
-						insurance.calculateTax(c.getType(), miles), 
-						insurance.calculateSubtotal(miles) + insurance.calculateTax(c.getType(), miles)));
+						insurance.calculateSubtotal(), 
+						insurance.calculateTax(c.getType()), 
+						insurance.calculateSubtotal() + insurance.calculateTax(c.getType())));
 				
-				finalSubtotal += insurance.calculateSubtotal(miles);
-				finalTax += insurance.calculateTax(c.getType(), miles);
-				finalTotal += insurance.calculateSubtotal(miles) + insurance.calculateTax(c.getType(), miles);
+				finalSubtotal += insurance.calculateSubtotal();
+				finalTax += insurance.calculateTax(c.getType());
+				finalTotal += insurance.calculateSubtotal() + insurance.calculateTax(c.getType());
 
 			} else if(p.getProductType().equals("SR")){
 
@@ -336,6 +338,12 @@ public class InvoiceReport extends DataLoader{
 			}
 
 		}
+		
+		if(c.getType().equals("C")){
+			double discount = finalSubtotal * .12;
+			finalTotal -= discount;
+		}
+		
 		sb.append(String.format("\n"));
 		sb.append(String.format("%-81s %-15.2f %-15.2f %-15.2f\n", "SUB-TOTALS", finalSubtotal, finalTax, finalTotal));
 		sb.append(String.format("%-113s %-15.2f\n", "ADDITIONAL FEE", additionalFee));
@@ -372,10 +380,6 @@ public class InvoiceReport extends DataLoader{
 	public static void main(String args[]) {
 
 		loadData();
-
-		System.out.println("running");
-
-
 
 		InvoiceReport ir = new InvoiceReport();
 		String summary = ir.generateSummaryReport();

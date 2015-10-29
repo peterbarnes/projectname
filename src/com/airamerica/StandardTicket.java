@@ -50,4 +50,5 @@ public class StandardTicket extends Ticket {
 		}
 		return totalTax - calculateSubtotal();
 	}
+
 }

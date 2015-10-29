@@ -8,7 +8,7 @@ public class Insurance extends Product {
 	private String ageClass;
 	private double costPerMile;
 	private String noOfInsurance;
-	private Product ticket;
+	private Ticket ticket;
 	
 	public Insurance(String productCode, String productType, String name,
 			String ageClass, double costPerMile) {
@@ -54,32 +54,29 @@ public class Insurance extends Product {
 		return ticket;
 	}
 
-	public void setProduct(Product product) {
+	public void setTicket(Ticket product) {
 		this.ticket = product;
 	}
-	
-	public Ticket createTicket(Product product){
+
+	public double calculateSubtotal(){
 		
-		Ticket newTicket = null;
-		newTicket = (Ticket) product;
+		double fee = this.costPerMile * this.ticket.getMiles();
+		double noOfPassengers = 2;
+		if(this.ticket.getPassengers().size() != 0){
+			noOfPassengers = this.ticket.getPassengers().size();
+		}
+		return fee * noOfPassengers;
 		
-		return newTicket;
 	}
 	
-	public double calculateSubtotal(double miles){
-	
+	public double calculateTax(String type){
+		double totalTax = 0;
 		
-		double fee = this.costPerMile * miles;
-		
-		return fee;
-	}
-	
-	public double calculateTax(String type, double miles){
-		
-		double tax = .04;
-		double subtotal = calculateSubtotal(miles);
-		
-		double totalTax = subtotal * tax;
+		if(!(type.equals("V"))){
+			double tax = .04;
+			double subtotal = calculateSubtotal();
+			totalTax = subtotal * tax;
+		}
 		
 		return totalTax;
 	}

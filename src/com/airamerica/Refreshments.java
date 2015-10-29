@@ -43,9 +43,15 @@ public class Refreshments extends Product {
 	}
 	
 	public double calculateTax(String type){
-		double tax = .04;
-		double subtotal = calculateSubtotal();
-		double totalTax = subtotal * tax;
+		
+		
+		double tax = 0;
+		double totalTax = 0;
+		if(!(type.equals("V"))){
+			tax = .04;
+			double subtotal = calculateSubtotal();
+			totalTax = subtotal * tax;
+		}
 		
 		return totalTax;
 	}

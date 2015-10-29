@@ -406,10 +406,11 @@ public class DataLoader {
 				} else if(product instanceof Insurance){
 					
 					String noOfInsurance = productTokens[1];
-					Product ticket = searchProducts(productCode);
+					String ticketCode = productTokens[2];
+					Ticket ticket = (Ticket) searchProducts(ticketCode);
 					
 					((Insurance) product).setNoOfInsurance(noOfInsurance);
-					((Insurance) product).setProduct(ticket);
+					((Insurance) product).setTicket(ticket);
 					
 				} else if(product instanceof CheckedBaggage){
 					
@@ -425,7 +426,6 @@ public class DataLoader {
 					Person person = searchPersons(productTokens[1]);
 					((SpecialAssistance) product).setPerson(person);
 				}
-				System.out.println(product);
 				invoiceProducts.add(product);
 			}
 			
@@ -506,10 +506,17 @@ public class DataLoader {
 			if(p.getProductCode().equals(code)){
 				if(p instanceof StandardTicket){
 					product = new StandardTicket(p.getProductCode(), p.getProductType(), ((Ticket) p).getDepAirportCode(), ((Ticket) p).getArrAirportCode(), ((Ticket) p).getDepTime(), ((Ticket) p).getArrTime(), ((Ticket) p).getFlightNo(), ((Ticket) p).getFlightClass(), ((Ticket) p).getAirCraftType());
+					Ticket newProduct = (Ticket) product;
+					newProduct.setPassengers(((StandardTicket) p).getPassengers());
+					product = (Ticket) newProduct;
 				} else if(p instanceof OffSeasonTicket){
 					product = new OffSeasonTicket(p.getProductCode(), p.getProductType(), ((OffSeasonTicket) p).getSeasonStartDate(), ((OffSeasonTicket) p).getSeasonEndDate(),((Ticket) p).getDepAirportCode(), ((Ticket) p).getArrAirportCode(), ((Ticket) p).getDepTime(), ((Ticket) p).getArrTime(), ((Ticket) p).getFlightNo(), ((Ticket) p).getFlightClass(), ((Ticket) p).getAirCraftType(), ((OffSeasonTicket) p).getRebate());
+					
 				} else if(p instanceof AwardTickets){
 					product = new AwardTickets(p.getProductCode(), p.getProductType(), ((Ticket) p).getDepAirportCode(), ((Ticket) p).getArrAirportCode(), ((Ticket) p).getDepTime(), ((Ticket) p).getArrTime(), ((Ticket) p).getFlightNo(), ((Ticket) p).getFlightClass(), ((Ticket) p).getAirCraftType(), ((AwardTickets) p).getPointsPerMile());
+					Ticket newProduct = (Ticket) product;
+					newProduct.setPassengers(((AwardTickets) p).getPassengers());
+					product = (Ticket) newProduct;
 				} else if(p instanceof CheckedBaggage){
 					product = new CheckedBaggage(p.getProductCode(), p.getProductType(), ((CheckedBaggage) p).getTicketCode());
 				} else if(p instanceof Insurance){
